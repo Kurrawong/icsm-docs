@@ -8,6 +8,8 @@ This work is being done by [KurrawongAI](https://kurrawong.ai) based on a requir
 
 The plan is to deliver ICSM documents as Linked Data resources with their constituent parts delivered as other Linked Data resources, principally vocabularies. For example the _Australian Place Naming Principles_ document can be represented as a `schema:DigitalDocument` which contains two vocabularies: a glossary of Place Name terms and one of _Principles_ for place naming.
 
+The individual `schema:DigitalDocument` instances will be delivered within a data catalogue (`schema:DataCatalog`) as another catalogue alongside the catalogue of vocabularies already delivered at <https://icsm.information.qld.gov.au/>.
+
 ## License
 
 The documentation and data in this repository are licensed for reuse under the [Creative Commons BY 4.0](https://creativecommons.org/licenses/by/4.0/) license, a copy of the deed of which is within this repository in the `LICENSE` file with the following copyright notice:
