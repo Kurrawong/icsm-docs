@@ -1,0 +1,131 @@
+PREFIX : <https://linked.data.gov.au/def/apnp-glossary/>
+PREFIX cs: <https://linked.data.gov.au/def/apnp-glossary>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX schema: <https://schema.org/>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+:feature
+    a skos:Concept ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "A place with identifiable characteristics (e.g. geographical and administrative) that distinguish it from its surroundings."@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Feature"@en ;
+.
+
+:generic-term
+    a skos:Concept ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "A part of a place name that indicates the type of geographical or topographical feature of a place."@en ;
+    skos:example "'Park' is a generic term used in the place name, 'Karakai Park', and 'Bay' is a generic term used in the place name 'Botany Bay'" ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Generic Term"@en ;
+.
+
+:icip
+    a skos:Concept ;
+    rdfs:isDefinedBy cs: ;
+    skos:altLabel "ICIP" ;
+    skos:definition "A broad term which is used to refer to the rights Aboriginal and Torres Strait Islander people have to their heritage and culture. ICIP can include knowledge, songlines, language, dance, symbols and art as well as medicines, language, bush foods, sacred sites and ecological knowledge"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Indigenous Cultural and Intellectual Property"@en ;
+    schema:citation "https://www.arts.gov.au/what-we-do/indigenous-arts-and-languages/protecting-indigenous-cultural-and-intellectual-property-rights"^^xsd:anyURI ;
+.
+
+:locality
+    a skos:Concept ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "A locality, commonly referred to as a ‘suburb’ in urban areas, is an administrative area over a defined geographical area, for the creation of valid addresses that can be uniquely and clearly identified"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Locality"@en ;
+.
+
+:official-name
+    a skos:Concept ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "The State, Territory or other naming authority may approve a name to be the official name for a place. These may be referred to as assigned, approved, gazetted or registered"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Official Name"@en ;
+.
+
+:offshore-feature
+    a skos:Concept ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Any feature located in the ocean and away from the coast"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Offshore Feature"@en ;
+.
+
+:place-name
+    a skos:Concept ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "An official or unofficial name recognised by a naming authority"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Place Name"@en ;
+.
+
+:road
+    a skos:Concept ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Any public or private land-based thoroughfare or course navigable by vehicle or foot"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Road"@en ;
+.
+
+:unofficial-name
+    a skos:Concept ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "The State, Territory or other naming authority may include alternative names within a gazetteer or related databases at their discretion. This may include recorded names, spelling variants, historic names or unapproved names. Collectively, these are referred to as unofficial names"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Unofficial Name"@en ;
+.
+
+:vocabulary
+    a skos:Concept ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "A list of defined terms which enables standardised classification of information."@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Vocabulary"@en ;
+.
+
+<https://linked.data.gov.au/org/pnwg>
+    a schema:Organization ;
+    schema:name "Place Names Working Group" ;
+    schema:parentOrganization <https://linked.data.gov.au/org/icsm> ;
+    schema:url "https://www.anzlic.gov.au"^^xsd:anyURI ;
+.
+
+<https://linked.data.gov.au/org/icsm>
+    a schema:Organization ;
+    schema:name "Intergovernmental Committee on Surveying and Mapping" ;
+    schema:parentOrganization <https://linked.data.gov.au/org/icsm> ;
+    schema:url "https://www.anzlic.gov.au"^^xsd:anyURI ;
+.
+
+cs:
+    a skos:ConceptScheme ;
+    skos:definition "The glossary of term definitions within the Australian Place Naming Principles"@en ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/dataset/idn-docs/apnp> ;
+    skos:hasTopConcept
+        :feature ,
+        :generic-term ,
+        :icip ,
+        :locality ,
+        :official-name ,
+        :offshore-feature ,
+        :place-name ,
+        :road ,
+        :unofficial-name ,
+        :vocabulary ;
+    skos:prefLabel "Australian Place Naming Principles Glossary"@en ;
+    schema:copyrightNotice "&copy; Commonwealth of Australia, 2025" ;
+    schema:creator <https://linked.data.gov.au/org/pnwg> ;
+    schema:description "" ;
+    schema:dateIssued "2025-10-22"^^xsd:date ;
+    schema:dateCreated "2025-09-08"^^xsd:date ;
+    schema:dateModified "2026-03-21"^^xsd:date ;
+    schema:license <http://purl.org/NET/rdflicense/cc-by4.0> ;
+    schema:name "Australian Place Naming Principles" ;
+    schema:publisher <https://linked.data.gov.au/org/icsm> ;
+    schema:keywords <https://linked.data.gov.au/def/unggim-themes/GeographicalNames> ;
+.

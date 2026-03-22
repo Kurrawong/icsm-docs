@@ -1,0 +1,34 @@
+PREFIX resource: <https://linked.data.gov.au/def/apnp>
+PREFIX schema: <https://schema.org/>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+resource:
+    a schema:DigitalDocument ;
+    schema:contactPoint
+        [
+            a schema:Person ;
+            schema:email "icsm@ga.gov.au"^^xsd:anyURI ;
+            schema:name "Chair ICSM Place Names Working Group" ;
+        ] ;
+    schema:copyrightNotice "&copy; Commonwealth of Australia, 2025" ;
+    schema:creator <https://linked.data.gov.au/org/pnwg> ;
+    schema:dateCreated "2025-09-08"^^xsd:date ;
+    schema:dateIssued "2025-10-22"^^xsd:date ;
+    schema:dateModified "2026-03-21"^^xsd:date ;
+    schema:description "These principles are propositions designed to establish modern, inclusive, and consistent place naming practices in Australia that reflect the evolving needs and values of diverse communities. The aim to provide a consistent and unified approach to place naming across the country." ;
+    schema:distribution
+        [
+            schema:contentURL "https://linked.data.gov.au/dataset/icsm-docs/apnp.pdf"^^xsd:anyURI ;
+            schema:encodingFormat "application/pdf" ;
+            schema:name "Published document form of the Principles" ;
+        ] ;
+    schema:hasPart
+        <https://linked.data.gov.au/def/apnp-glossary> ,
+        <https://linked.data.gov.au/def/apnp-principles> ;
+    schema:keywords <https://linked.data.gov.au/def/unggim-themes/GeographicalNames> ;
+    schema:license <http://purl.org/NET/rdflicense/cc-by4.0> ;
+    schema:name "Australian Place Naming Principles" ;
+    schema:publisher <https://linked.data.gov.au/org/icsm> ;
+    schema:version "1.1" ;
+.
+

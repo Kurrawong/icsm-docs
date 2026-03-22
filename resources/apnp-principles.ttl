@@ -1,0 +1,285 @@
+PREFIX : <https://linked.data.gov.au/def/apnp-principles/>
+PREFIX cs: <https://linked.data.gov.au/def/apnp-principles>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX schema: <https://schema.org/>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+:accessible
+    a skos:Concept ;
+    rdfs:isDefinedBy cs: ;
+    skos:broader :accurate-and-accessible ;
+    skos:definition """Place names MUST be approved by a relevant naming authority to be an official name.
+
+Place names SHOULD be published in the Australian gazetteer, available here: https://placenames.fsdf.org.au"""@en ;
+    skos:inScheme cs: ;
+    skos:notation "2.1" ;
+    skos:prefLabel "Accessible"@en ;
+.
+
+:atsi-names
+    a skos:Concept ;
+    rdfs:isDefinedBy cs: ;
+    skos:broader :promotes-connection-and-inclusivity ;
+    skos:definition "Any proposed place name using Aboriginal or Torres Strait Islander language should seek permission from the relevant Aboriginal or Torres Strait Islander peoples as the custodians of their language and culture"@en ;
+    skos:inScheme cs: ;
+    skos:notation "3.2" ;
+    skos:prefLabel "Aboriginal and Torres Strait Islander Names"@en ;
+.
+
+:clearly-described
+    a skos:Concept ;
+    rdfs:isDefinedBy cs: ;
+    skos:broader :accurate-and-accessible ;
+    skos:definition """A place name record SHOULD include:
+
+A clear description of the feature where the place name will be applied, including the extent of the feature.
+
+The type of feature being named. Where possible the feature type should align with the feature catalogue, available here: https://icsm.gov.au/education/feature-catalogue.
+
+The place name’s origin information, such as the reasoning for the name and any associated stories or background.
+
+Phonetic spelling and a recording of the pronunciation of the name, if available."""@en ;
+    skos:inScheme cs: ;
+    skos:notation "2.3" ;
+    skos:prefLabel "Clearly Described"@en ;
+.
+
+:commemorative-names
+    a skos:Concept ;
+    rdfs:isDefinedBy cs: ;
+    skos:broader :promotes-connection-and-inclusivity ;
+    skos:definition """Place names can commemorate a person(s), significant event or a place’s historical use.
+
+Commemorative names should have a significant connection to the place they are applied.
+
+When commemorating a person:
+
+ - The person should be held in high regard by the community and have made a significant, relevant contribution to the area.
+
+ - The name should be applied posthumously and consent from the family should be sought where practical.
+
+ - All or any part of the person’s name may be used, except for initials, titles, honorifics, or postnominals.
+
+ - For places that form part of a street address (e.g. localities and roads), only one part of a person's name should be used (e.g. first or last name).
+
+Consideration should be given to commemorative names that acknowledge under-represented groups in our diverse communities"""@en ;
+    skos:inScheme cs: ;
+    skos:notation "3.4" ;
+    skos:prefLabel "Commemorative Names"@en ;
+.
+
+:connection
+    a skos:Concept ;
+    rdfs:isDefinedBy cs: ;
+    skos:broader :promotes-connection-and-inclusivity ;
+    skos:definition "Place names SHOULD have a connection to the feature or area they represent"@en ;
+    skos:inScheme cs: ;
+    skos:notation "3.1" ;
+    skos:prefLabel "Connection"@en ;
+.
+
+:consultation
+    a skos:Concept ;
+    rdfs:isDefinedBy cs: ;
+    skos:broader :promotes-connection-and-inclusivity ;
+    skos:definition """Where a community will be impacted by a new or altered place name appropriate consultation SHOULD take place.
+
+If using Aboriginal or Torres Strait Islander language in a place name, culturally appropriate engagement MUST be undertaken to obtain consent to use the name and record the meaning or story associated with the name."""@en ;
+    skos:inScheme cs: ;
+    skos:notation "3.6" ;
+    skos:prefLabel "Consultation"@en ;
+.
+
+:cross-state
+    a skos:Concept ;
+    rdfs:isDefinedBy cs: ;
+    skos:broader :accurate-and-accessible ;
+    skos:definition "The name for any feature that crosses a State / Territory / jurisdictional boundary SHOULD be the same on both sides of that boundary and be decided by consensus with all relevant naming authorities."@en ;
+    skos:inScheme cs: ;
+    skos:notation "2.4" ;
+    skos:prefLabel "Places which cross State/Territory/Jurisdictional Boundaries"@en ;
+.
+
+:dual-names
+    a skos:Concept ;
+    rdfs:isDefinedBy cs: ;
+    skos:broader :promotes-connection-and-inclusivity ;
+    skos:definition """Dual names are a way to assign two names to a geographical feature, including one Aboriginal and Torres Strait Islander name.
+
+Dual names are not appropriate for roads or localities.
+
+Dual names should be represented by name, space, forward slash (/), space, name e.g. Wambuul / Macquarie River. Both names should be displayed on official maps and signage"""@en ;
+    skos:inScheme cs: ;
+    skos:notation "3.3" ;
+    skos:prefLabel "dual Names"@en ;
+.
+
+:language
+    a skos:Concept ;
+    rdfs:isDefinedBy cs: ;
+    skos:broader :consistent-and-enduring ;
+    skos:definition """Place names SHOULD: Be written in standard Australian English, or Aboriginal or Torres Strait Islander languages as determined by the appropriate Aboriginal and Torres Strait Islander community; Use the standard Australian English alphabet.
+
+Place names SHOULD NOT: Contain numbers, roman numerals, punctuation, abbreviations, acronyms or similar. All words and numbers must be written in full; Start with the word 'The'; Contain cardinal indicators or qualifying terms, as listed in the 'Geographical Name Affix' vocabulary, available here: https://linked.data.gov.au/def/gn-affix"""@en ;
+    skos:inScheme cs: ;
+    skos:notation "1.1" ;
+    skos:prefLabel "Language"@en ;
+.
+
+:name-changes
+    a skos:Concept ;
+    rdfs:isDefinedBy cs: ;
+    skos:broader :consistent-and-enduring ;
+    skos:definition "Place names should not be changed unless there is a compelling reason to do so."@en ;
+    skos:inScheme cs: ;
+    skos:notation "1.2" ;
+    skos:prefLabel "Name Changes"@en ;
+.
+
+:offshore-places
+    a skos:Concept ;
+    rdfs:isDefinedBy cs: ;
+    skos:broader :accurate-and-accessible ;
+    skos:definition """States and Territories are responsible for the naming of any feature within its legislated coastal waters e.g. islands.
+
+The Australian Hydrographic Office3 is responsible for the naming of undersea features beyond legislated coastal waters."""@en ;
+    skos:inScheme cs: ;
+    skos:notation "2.5" ;
+    skos:prefLabel "Offshore Places"@en ;
+    schema:citation
+        "https://www.hydro.gov.au/"^^xsd:anyURI ,
+        "https://www.legislation.gov.au/C2004A02276/latest/text"^^xsd:anyURI ;
+.
+
+:road-names
+    a skos:Concept ;
+    rdfs:isDefinedBy cs: ;
+    skos:broader :accurate-and-accessible ;
+    skos:definition """Concise and unique road names are essential for creating accurate address information and ensuring efficient service delivery, particularly for emergency response agencies where timely and precise location data is essential.
+
+A road name should be clear, unambiguous and easily read on signage.
+
+All public roads should be named.
+
+Private roads that provide access to properties should be named.
+
+A road name should not be applied to a proposed road, where there is no intention to construct the road in the near future.
+
+A road name should apply to a continuous length of road even if it crosses administrative boundaries. If a road is broken due to redesign or redevelopment, then a new name is to be given to the non-continuous parts.
+
+A highway that passes through a town or city may be assigned a local name.
+
+Two sides of a road divided by a median strip should have the same name.
+
+A road name should consist of a unique term followed by a road type, as listed in the road types vocabulary, which can be accessed here: https://linked.data.gov.au/def/road-types/standard-australia.
+
+For information specific to Addressing, please refer to the Australia/New Zealand Standard for Rural and urban Addressing (AS/NZS4819:2011)."""@en ;
+    skos:inScheme cs: ;
+    skos:notation "2.6" ;
+    skos:prefLabel "Road Names"@en ;
+    schema:citation "AS/NZS4819:2011" ;
+.
+
+:unique
+    a skos:Concept ;
+    rdfs:isDefinedBy cs: ;
+    skos:broader :accurate-and-accessible ;
+    skos:definition """Place names of the same feature type SHOULD be unique and avoid duplicating existing names (in spelling or pronunciation) where it may cause confusion.
+
+A new road name, regardless of road type, SHOULD NOT be duplicated in the same or an adjoining locality.
+
+A new locality name SHOULD be unique in Australia."""@en ;
+    skos:inScheme cs: ;
+    skos:notation "2.2" ;
+    skos:prefLabel "Unique"@en ;
+.
+
+:unnacceptable-names
+    a skos:Concept ;
+    rdfs:isDefinedBy cs: ;
+    skos:broader :promotes-connection-and-inclusivity ;
+    skos:definition """Place names MUST NOT:
+
+Cause harm by being derogatory, racist, discriminatory or offensive.
+
+Include words protected or restricted by Commonwealth or other legislation, unless the appropriate approvals are sought, e.g the term ANZAC, or Defence terms.
+
+Infringe on any established or implied rights, e.g. copyright, trademarks and Indigenous Cultural and Intellectual Property (ICIP).
+
+Be perceived as promoting commercial or business interests"""@en ;
+    skos:inScheme cs: ;
+    skos:notation "3.5" ;
+    skos:prefLabel "Connection"@en ;
+    schema:citation
+        "https://www.dva.gov.au/recognition/commemorations/protecting-word-anzac"^^xsd:anyURI ,
+        "https://www.legislation.gov.au/F2016L01568/latest/text"^^xsd:anyURI ;
+.
+
+<https://linked.data.gov.au/org/pnwg>
+    a schema:Organization ;
+    schema:name "Place Names Working Group" ;
+    schema:parentOrganization <https://linked.data.gov.au/org/icsm> ;
+    schema:url "https://www.anzlic.gov.au"^^xsd:anyURI ;
+.
+
+:consistent-and-enduring
+    a skos:Concept ;
+    rdfs:isDefinedBy cs: ;
+    skos:altLabel "Place Naming Across Australia is Consistent and Enduring"@en ;
+    skos:definition "All features and places in Australia are named in a consistent way to support the effective delivery of services, enhance community cohesion, and recognise the cultural heritage of that place."@en ;
+    skos:inScheme cs: ;
+    skos:notation "1" ;
+    skos:prefLabel "Consistent and Enduring"@en ;
+    skos:topConceptOf cs: ;
+.
+
+<https://linked.data.gov.au/org/icsm>
+    a schema:Organization ;
+    schema:name "Intergovernmental Committee on Surveying and Mapping" ;
+    schema:parentOrganization <https://linked.data.gov.au/org/icsm> ;
+    schema:url "https://www.anzlic.gov.au"^^xsd:anyURI ;
+.
+
+:accurate-and-accessible
+    a skos:Concept ;
+    rdfs:isDefinedBy cs: ;
+    skos:altLabel ""@en ;
+    skos:definition "Place names are a key descriptor in databases that support a broad range of key government and industry services. To ensure reliability and usability, place names must be accurate and readily accessible. Uniqueness is especially critical for names that form part of a street address, such as road or locality names, to avoid confusion - including for the timely provision of emergency services."@en ;
+    skos:inScheme cs: ;
+    skos:notation "2" ;
+    skos:prefLabel "Place Nameing Information is Accurate and Accessible"@en ;
+    skos:topConceptOf cs: ;
+.
+
+:promotes-connection-and-inclusivity
+    a skos:Concept ;
+    rdfs:isDefinedBy cs: ;
+    skos:altLabel "Place Naming Information Promotes Connection and Inclusivity"@en ;
+    skos:definition "Australia is a multicultural nation and place names promoting diversity and cultural inclusivity are encouraged. Aboriginal and Torres Strait Islander names in particular play an important role in reawakening language and culture. This may include the reinstating of traditional place names, or supporting the creation of new names derived from Aboriginal and Torres Strait Islander languages."@en ;
+    skos:inScheme cs: ;
+    skos:notation "3" ;
+    skos:prefLabel "Promotes Connection and Inclusivity"@en ;
+    skos:topConceptOf cs: ;
+.
+
+cs:
+    a skos:ConceptScheme ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/dataset/idn-docs/apnp> ;
+    skos:definition "The principles within the Australian Place Naming Principles"@en ;
+    skos:hasTopConcept
+        :accurate-and-accessible ,
+        :consistent-and-enduring ,
+        :promotes-connection-and-inclusivity ;
+    skos:prefLabel "Australian Place Naming Principles' Principles"@en ;
+    schema:copyrightNotice "&copy; Commonwealth of Australia, 2025" ;
+    schema:creator <https://linked.data.gov.au/org/pnwg> ;
+    schema:dateCreated "2025-09-08"^^xsd:date ;
+    schema:dateIssued "2025-10-22"^^xsd:date ;
+    schema:dateModified "2026-03-21"^^xsd:date ;
+    schema:description "The principles within the Australian Place Naming Principles" ;
+    schema:license <http://purl.org/NET/rdflicense/cc-by4.0> ;
+    schema:name "Australian Place Naming Principles" ;
+    schema:publisher <https://linked.data.gov.au/org/icsm> ;
+    schema:keywords <https://linked.data.gov.au/def/unggim-themes/GeographicalNames> ;
+.
